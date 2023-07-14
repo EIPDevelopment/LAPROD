@@ -1,6 +1,8 @@
 // this is the processing step to delete logical anchors
 function logicAnchorDeleteProcessingPrep(caseData) {
 
+//this is a test comment
+    
 let clientIsFA = returnAttributeValue(caseData, 'CLIENT_IS_FA');
 let basis = returnAttributeValue(caseData, 'BASIS');
 let category = returnAttributeValue(caseData, 'CATEGORY');
