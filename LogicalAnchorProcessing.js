@@ -511,6 +511,8 @@ if ( designationsGroup1.trim().length !== 0 || designationsGroup2.trim().length 
     logicalAnchorsToDelete.push('<<<DESIGNATION_1_EMPTY_2_NOT_EMPTY>>>')
 }
 
+logicalAnchorsToDelete.push( (ownerNameCode === '543' && instructorNameCode === 'A1278')   ? '<<<IS_NOT_BAKERHOSTETLER_OWNER_AMAZON>>>' : '<<<IS_BAKERHOSTETLER_OWNER_AMAZON>>>'); 
+
 const spDefinedLogicalAnchors = processSPDefinedLogicalAnchors(caseData);
 const finalArray = [...logicalAnchorsToDelete,...spDefinedLogicalAnchors];
 
